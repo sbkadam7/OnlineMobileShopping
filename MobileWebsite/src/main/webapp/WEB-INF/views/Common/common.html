@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml"
+	xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head th:fragment="common-header">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3e8edbd1f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/home.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="coloured-section title-section" id="title" th:fragment="navbar">
+
+        <!-- Nav Bar -->
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand" href=""> MobileSite</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class=" nav-item">
+                            <a class="nav-link" href="#footer"> Contact </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropbtn" onclick="myFunction()"> Login/Signup </a>
+                            <!-- <button class="nav-link dropbtn" onclick="myFunction()"> Login/Signup</button> -->
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="/user">User   Login/Signup</a>
+                                <a href="/seller">Seller Login/Signup</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/userProfile"> Profile </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- Footer -->
+
+    <footer class="white-section" id="footer" th:fragment="footer">
+        <div class="container-fluid">
+
+            <a href="https://www.facebook.com/shwetank.bst/" target="_blank"><i class="fab fa-facebook footer-icon" ></i></a>
+            <a href="https://twitter.com/shwetankssy" target="_blank"><i class="fab fa-twitter footer-icon"></i></a>
+            <a href="https://www.instagram.com/shwetankssy" target="_blank"><i class="fab fa-instagram footer-icon"></i></a>
+            <a href="mailto: shwetank.bst@gmail.com" target="_blank"><i class="fas fa-envelope footer-icon"></i></a>
+            <p>© Copyright 2021 MobileSite</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+/* section color */
+
+.coloured-section {
+    background-color: skyblue;
+    color: white;
+}
+
+
+/* Navigation bar*/
+
+.navbar {
+    /*padding: 0 0 1.5rem;*/
+}
+
+.navbar-brand {
+    font-family: "ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+/*Title image*/
+
+#title .container-fluid {
+    padding: 0% 15% 0%;
+}
+
+
+/*Footer*/
+
+.footer-icon {
+    padding: 0 10px;
+    margin: 20px 10px;
+}
+
+
+/*media query*/
+
+@media (max-width: 1028px) {
+    .title-section {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+    #footer {
+        font-size: 150%;
+    }
+}
+
+
+/*Login Signup*/
+
+.dropbtn {
+    /*background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;*/
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    /*background-color: #2980B9;*/
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+
+/*Search*/
+.seac {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+        
+}
+
+.seac:focus {
+    width: 100%;
+}
